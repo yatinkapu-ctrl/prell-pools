@@ -64,10 +64,10 @@ button, a, input, select { touch-action: manipulation; }
 .topbar { background: var(--navy); color: var(--ice); font-size: 13px; letter-spacing: .04em; }
 .topbar-inner {
   max-width: 1180px; margin: 0 auto; padding: 9px 24px;
-  display: flex; flex-wrap: wrap; gap: 8px 28px; align-items: center; justify-content: space-between;
+  display: flex; flex-wrap: wrap; gap: 8px 28px; align-items: center; justify-content: center;
+  text-align: center;
 }
 .topbar-inner span { opacity: .82; }
-.topbar-inner a { color: var(--sky); letter-spacing: .06em; }
 
 /* ---------- header ---------- */
 header.site-header {
