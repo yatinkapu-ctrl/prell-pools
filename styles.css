@@ -402,6 +402,16 @@ footer.site-footer { background: var(--white); padding: clamp(56px,7vw,88px) 24p
   .quote-flex, .proof-flex, .why-flex, .area-flex { gap: 32px; }
   .services-grid { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px 20px; }
+
+  /* Fixed min-widths below this breakpoint exceed the viewport once section
+     padding is subtracted, and body uses overflow-x:clip, so the excess was
+     silently cut off instead of scrolling — content just disappeared. */
+  .proof-text, .ba-wrap, .quote-text, .quote-card,
+  .why-text, .why-photo, .area-text, .area-card {
+    min-width: 0;
+    max-width: none;
+    flex-basis: 100%;
+  }
 }
 @media (max-width: 420px) {
   .footer-grid { grid-template-columns: 1fr; }
