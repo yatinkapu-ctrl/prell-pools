@@ -181,6 +181,14 @@ nav.primary-nav a:hover { color: var(--blue); border-bottom-color: var(--blue-li
 .hero-tint-bottom { position: absolute; inset: 0; z-index: 5; background: linear-gradient(180deg, rgba(10,16,22,.28), rgba(10,16,22,0) 40%, rgba(10,16,22,.18)); }
 .hero-content { position: relative; z-index: 10; min-height: clamp(420px, 52vh, 520px); max-width: 1180px; margin: 0 auto; padding: clamp(56px,7vw,88px) 24px clamp(72px,9vw,112px); display: flex; align-items: center; }
 .hero-text { position: relative; flex: 1 1 auto; max-width: 46ch; color: var(--white); display: flex; flex-direction: column; align-items: flex-start; }
+.hero-rating {
+  display: inline-flex; align-items: center; gap: 9px; margin: 0 0 16px; padding: 7px 14px 7px 12px;
+  border-radius: 999px; background: rgba(250,252,254,.1); border: 1px solid rgba(234,244,250,.25);
+  backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px);
+  font-size: 13px; font-weight: 600; color: rgba(250,252,254,.92);
+  animation: fadeSlideUp .9s cubic-bezier(.16,1,.3,1) .05s both;
+}
+.hero-rating-stars { color: var(--sky); letter-spacing: .05em; font-size: 13px; }
 .hero-eyebrow { font-size: 12.5px; font-weight: 700; letter-spacing: .24em; text-transform: uppercase; color: var(--sky); margin: 0 0 18px; animation: fadeSlideUp .9s cubic-bezier(.16,1,.3,1) .15s both; }
 .hero-title { font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: clamp(40px,5.6vw,68px); line-height: 1.06; letter-spacing: .005em; margin: 0 0 20px; text-wrap: balance; animation: fadeSlideUp 1s cubic-bezier(.16,1,.3,1) .35s both; max-width: 700px; width: 100%; }
 .hero-sub { font-size: clamp(16px,1.3vw,18px); line-height: 1.65; font-weight: 500; color: rgba(240,248,252,.96); max-width: 36ch; text-shadow: 0 1px 14px rgba(10,16,22,.5); margin: 0 0 32px; animation: fadeSlideUp 1s cubic-bezier(.16,1,.3,1) .55s both; }
